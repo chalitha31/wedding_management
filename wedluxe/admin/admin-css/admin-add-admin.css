@@ -1,0 +1,54 @@
+.add-admin-con {
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.356), white);
+    padding: 30px 30px;
+    border-radius: 10px;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.171);
+    margin-bottom: 50px;
+}
+
+.add-admin-con input {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.171);
+}
+
+.add-btn {
+    width: fit-content;
+    padding: 5px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(5, 142, 255);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.096);
+    font-weight: 600;
+    color: white;
+    align-self: center;
+    cursor: pointer;
+    transition: 250ms;
+}
+
+.add-btn:hover {
+    padding: 5px 30px;
+}
+
+.add-btn:active {
+    background-color: rgb(0, 122, 221);
+}
+
+.admin-staff {
+    margin-bottom: 10px;
+}
+
+table {
+    margin-top: 0px;
+}
+
+tr:nth-child(2n-1) {
+    background-color: rgba(212, 202, 202, 0.63);
+}

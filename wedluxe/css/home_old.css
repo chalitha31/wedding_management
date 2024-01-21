@@ -1,0 +1,217 @@
+body {
+    background-color: bisque;
+}
+
+.page-title {
+    width: 100%;
+    font-size: 35px;
+    font-weight: 600;
+    /* position: absolute; */
+    z-index: 2;
+    top: 0px;
+    padding: 40px;
+    color: white;
+    text-align: center;
+    /* background-color: #0363b6; */
+    background-image: radial-gradient(#0362b60e, #0362b600);
+}
+
+#home-page {
+    background-color: #82a0bb;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* background-image: url("/images/homeallpaper.jpg"); */
+    background-image: linear-gradient(0deg, rgb(54, 26, 0), rgb(255, 254, 187));
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px 10vw;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    overflow: hidden;
+}
+
+#home-page h3 {
+    text-align: center;
+}
+
+.home-logo {
+    width: 20%;
+    z-index: 3;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    filter: brightness(90%);
+}
+
+.home-backdrop {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    width: 200%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    z-index: 2;
+}
+
+h3 {
+    font-weight: 400;
+    text-align: justify;
+    z-index: 2;
+}
+
+.home-footer {
+    position: absolute;
+    bottom: 10vh;
+}
+
+#hotels-page,
+#photograpy-page,
+#dj-page,
+#vehicles-page,
+#contact-page,
+#about-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(238, 238, 238));
+}
+
+.abstract {
+    width: 20%;
+    position: absolute;
+    z-index: 1;
+    bottom: 50px;
+    filter: opacity(0.4);
+}
+
+.ab-right {
+    right: 50px;
+}
+
+.ab-left {
+    left: 50px;
+}
+
+.page-container {
+    width: 80%;
+    background-color: rgba(93, 177, 99, 0);
+    display: flex;
+    z-index: 5;
+}
+
+.image-holder {
+    border-radius: 20px;
+    overflow: hidden;
+    flex: 1;
+    min-width: 300px;
+    max-height: 400px;
+}
+
+.image-holder img {
+    height: 100%;
+    align-self: center;
+    visibility: hidden;
+}
+
+.description-block {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    background-color: #3b3b3b00;
+    /* padding: 0px 20px; */
+}
+
+.description {
+    text-align: justify;
+    color: white;
+    backdrop-filter: blur(1px) brightness(100%);
+    padding: 20px 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px black;
+    font-size: 1rem;
+    font-size: 0.8rem;
+    line-height: 25px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    background-image: radial-gradient(rgba(56, 56, 56, 0.11), rgba(139, 139, 139, 0.082));
+}
+
+.page-button {
+    padding: 10px 30px;
+    background-color: #36a1ff;
+    background-color: #66ffb3;
+    background-color: #66c2ff9a;
+    border: none;
+    border-radius: 10px;
+    margin-top: 30px;
+    width: fit-content;
+    transition: 250ms;
+    font-size: 16px;
+    font-weight: 600;
+    z-index: 5;
+}
+
+.btn-left {
+    align-self: flex-start;
+}
+
+.btn-right {
+    align-self: flex-end;
+}
+
+.page-button:hover {
+    padding: 10px 40px;
+    background-color: #088cff;
+    color: white;
+}
+
+.page-button:active {
+    padding: 10px 30px;
+    background-color: #0363b6;
+}
+
+.display {
+    height: calc(100vh - var(--margin));
+    padding: var(--margin) var(--side-space) 0px var(--side-space);
+    padding: 0px var(--side-space) 0px var(--side-space);
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .display {
+    height: calc(100vh - var(--margin));
+    padding: var(--margin) var(--side-space) 0px var(--side-space);
+    padding: var(--margin) 0px 0px 0px;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+#hotels-page {
+    /* background-color: #0363b6; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/images/hotel-wall.jpg');
+}
+
+
+.home-wall {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(40%);
+}

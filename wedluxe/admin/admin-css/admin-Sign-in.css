@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    background-image: linear-gradient(to top, black, white);
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    height: 10vh;
+    width: 100vw;
+    background-color: rgba(240, 240, 75, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 0px 10%;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+.logo {
+    height:80px;
+    transition: 250ms;
+    cursor: pointer;
+}
+
+.admin-sign-up-form-container {
+    position: relative;
+    width: 500px;
+    min-height: 400px;
+    background-color: rgba(0, 0, 0, 0.262);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+}
+
+.form-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+    color: white;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.tag {
+    color: white;
+    align-self: first baseline;
+    margin-left: 15%;
+}
+
+.admin-sign-up-form-container input {
+    width: 70%;
+    height: 40px;
+    padding-left: 20px;
+    font-size: 15px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.back-button,
+.code-button {
+    margin-top: 15px;
+    font-size: 15px;
+    padding: 8px 30px;
+    border: none;
+    border-radius: 20px;
+}
+
+.back-button {
+    background-color: rgb(42, 159, 255);
+}
+
+.code-button {
+    background-color: rgb(255, 148, 129);
+}
+
+.email-input::before {
+    content: "E-Mail";
+}
+
+.gif-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.658);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(1px);
+}
+
+.load-gif {
+    position: absolute;
+    width: 100px;
+}
+
+.sentL {
+    position: absolute;
+    font-size: 40px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    color: rgb(166, 255, 0);
+    border: 4px solid rgb(166, 255, 0);
+}

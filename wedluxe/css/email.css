@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main-div {
+    position: relative;
+    padding: 20px 20px 20px 20px;
+}
+
+.title-div {
+    height: 130px;
+}
+
+.hed-div {
+    margin-top: 20px;
+}
+
+.head-main-details,
+.head-details {
+    position: absolute;
+}
+
+.head-details {
+    display: grid;
+    right: 10%;
+    gap: 7px;
+}
+
+.head-main-details a {
+    color: blue;
+}
+
+.billing-details {
+    margin-bottom: 20px;
+}
+
+.head-details span {
+    font-weight: 800;
+}
+
+.hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 2px solid gray;
+}
+
+.table {
+    display: flex;
+}
+
+.thr {
+    /*    margin-top:30px;
+    margin-bottom:20px; */
+    border: 1px solid gray;
+}
+
+.billing-details span {
+    font-weight: bold;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.total-div {
+    /* position: absolute; */
+    /* width: 100vw; */
+    /*   margin-top:60px; */
+    /* right: 3%; */
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.total-details {
+    /* width: 100%; */
+    display: flex;
+    justify-content: right;
+    /* text-align: end; */
+    margin-right: 3%;
+}
+
+.total-details span {
+    font-size: 20px;
+    text-align: right;
+}
+
+
+/* .onsp {
+    font-size: 40px;
+} */
+
+.total-hr {
+    display: flex;
+    justify-content: right;
+    margin-left: 63%;
+    /* text-align: right; */
+}
+
+.to-hr,
+.sub-hr {
+    border: 1px solid gray;
+    width: 280px;
+}
+
+.to-hr {
+    border-top: 2px solid #8c8b8b;
+    border-bottom: 2px solid #fff;
+}
+
+.to-hr:after {
+    content: '';
+    display: block;
+    margin-top: 2px;
+    border-top: 2px solid #8c8b8b;
+    border-bottom: 2px solid #fff;
+}
+
+footer {
+    height: 100px;
+    width: 600px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    position: absolute;
+    height: 80px;
+    border-radius: 50%;
+}
+
+footer span {
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: 80px;
+    /* margin-top: 100px; */
+    color: rgb(58, 58, 58);
+}

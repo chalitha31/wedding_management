@@ -1,0 +1,427 @@
+.hotel-profile-container {
+    margin-top: var(--margin);
+    padding-bottom: 30px;
+    /* padding-bottom: 8vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 186, 186);
+    background-image: linear-gradient(8deg, rgb(219, 219, 219), rgb(255, 255, 255));
+}
+
+.profile-background-image {
+    width: 100%;
+    background-color: blanchedalmond;
+    height: 50vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    position: relative;
+}
+
+.profile-background-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hotel-major-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-image: linear-gradient(0deg, rgb(32, 32, 32), rgba(37, 37, 37, 0.486));
+    min-height: 30vh;
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+}
+
+.logo-holder {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.671), 0px -2px 20px rgba(255, 255, 255, 0.452);
+}
+
+.logo-holder img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hotel-description {
+    min-width: fit-content;
+    max-width: 500px;
+    overflow: hidden;
+    padding: 0px 30px;
+}
+
+.hotel-description h1 {
+    color: white;
+    font-weight: 450;
+    font-size: 3em;
+}
+
+.hotel-description h4 {
+    color: white;
+    font-weight: 400;
+}
+
+.package-page {
+    min-height: calc(100vh - var(--margin));
+    height: fit-content;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.backdrop {
+    position: absolute;
+}
+
+.package-page .backdrop:nth-child(1) {
+    left: -20%;
+    top: 0%;
+    filter: hue-rotate(0deg);
+}
+
+.package-page .backdrop:nth-child(2) {
+    right: -20%;
+    bottom: 0%;
+    filter: hue-rotate(320deg);
+}
+
+.page-title {
+    font-size: 2em;
+    margin-top: 10px;
+    padding: 50px 0px;
+    z-index: 2;
+    font-weight: 500;
+}
+
+.package-container {
+    z-index: 2;
+    padding: 50px 0px 60px 0px;
+    margin: 10px 0px 0px 0px;
+    width: 92%;
+    border-radius: 10px;
+    background-color: rgba(218, 218, 218, 0);
+    background-image: linear-gradient(50deg, rgba(230, 230, 230, 0.274), rgba(245, 245, 245, 0.226));
+    box-shadow: inset 0px 1px 3px rgb(255, 255, 255), 0px 1px 6px rgba(192, 192, 192, 0.897);
+    height: min-content;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    z-index: 2;
+    backdrop-filter: blur(2px);
+}
+
+li {
+    list-style: none;
+    background-color: rgba(238, 238, 238, 0.39);
+}
+
+li:nth-child(2n) {
+    background-color: rgba(238, 238, 238, 0);
+}
+
+.package {
+    width: 300px;
+    padding: 5px 5px 20px 5px;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: -3px -3px 4px rgba(255, 255, 255, 0.705), 3px 3px 10px rgba(63, 63, 63, 0.226);
+}
+
+.package-title {
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    padding: 6px 0px;
+    font-weight: 600;
+    color: rgb(20, 20, 20);
+    text-align: center;
+}
+
+.bronze {
+    background-image: linear-gradient(0deg, rgba(255, 148, 121, 0.459), rgba(255, 143, 68, 0.705));
+}
+
+.platinum {
+    background-image: linear-gradient(0deg, rgba(209, 209, 209, 0.459), rgba(138, 138, 138, 0.712));
+}
+
+.gold {
+    background-image: linear-gradient(0deg, rgba(255, 244, 92, 0.459), rgba(255, 214, 32, 0.774));
+}
+
+.package-image-holder {
+    border-radius: 0px 0px 10px 10px;
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(221, 221, 221);
+    box-shadow: 0px 3px 4px rgba(255, 255, 255, 0.705);
+}
+
+.package-image-holder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.package h3 {
+    margin-top: 10px;
+    margin-left: 10px;
+    align-self: flex-start;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.package ul {
+    align-self: flex-start;
+    margin-left: 20px;
+    width: 85%;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.package ul li {
+    border-radius: 20px;
+    padding: 8px 10px;
+}
+
+.package-price {
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+
+/* gallery */
+
+.gallery-page {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.photos-container {
+    background-color: rgba(228, 228, 228, 0.808);
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0px 50px 0px;
+    border-radius: 20px;
+}
+
+.photo-block {
+    position: relative;
+    background-color: rgb(207, 207, 207);
+    width: 380px;
+    min-height: 320px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 4px 5px 5px rgba(63, 63, 63, 0.705);
+    transition: 250ms;
+}
+
+.photo-block img {
+    transition: 500ms;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photo-block:hover .photo {
+    transform: scale(1.1);
+}
+
+.photo-title {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    padding: 7px 0px;
+    background-color: rgba(0, 0, 0, 0.301);
+    color: white;
+    font-size: 15px;
+    display: none;
+}
+
+.photo-viewer-back {
+    position: fixed;
+    width: 100%;
+    height: 90vh;
+    top: var(--margin);
+    background-color: rgba(0, 0, 0, 0.86);
+    backdrop-filter: blur(2px);
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-viewer {
+    height: 80%;
+    width: 0;
+    max-width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.photo-view {
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.photo-view-title {
+    color: white;
+}
+
+
+/* review page */
+
+.review-page {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    min-height: 90vh;
+    width: 100%;
+    background-color: white;
+}
+
+.review-page .backdrop:nth-child(1) {
+    bottom: 0%;
+    right: 0%;
+    filter: hue-rotate(200deg) opacity(0.4);
+}
+
+.review-page .backdrop:nth-child(2) {
+    top: 0%;
+    left: -10%;
+    transform: rotate(180deg);
+    filter: hue-rotate(310deg) opacity(0.4);
+}
+
+.review-page .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.review-page .box-container .box {
+    width: 450px;
+    text-align: center;
+    padding: 1rem 3rem;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 2px 5px 10px rgba(63, 63, 63, 0.301);
+    background-image: linear-gradient(40deg, rgba(212, 212, 212, 0.459), rgba(255, 255, 255, 0.37));
+}
+
+.review-page .box-container .box .quote {
+    position: absolute;
+    left: 20px;
+}
+
+.review-page .box-container .box .user {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review-page .box-container .box h3 {
+    padding: 10px 0;
+    font-size: 2rem;
+    color: #000000;
+}
+
+.review-page .box-container .box .stars i {
+    font-size: 1.5rem;
+    color: var(--main-color);
+    color: #c7a17a;
+}
+
+.review-page .box-container .box p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: #3b3b3b;
+    padding: 20px 0;
+}
+
+
+/* contact page */
+
+.contact-page {
+    background-color: rgb(37, 37, 37);
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.contact-page .page-title {
+    padding: 30px 0px 30px 0px;
+}
+
+.share {
+    padding: 1rem 0;
+}
+
+.share a {
+    text-decoration: none;
+    height: 50px;
+    width: 50px;
+    padding-top: 10px;
+    font-size: 30px;
+    color: #000000;
+    background-color: white;
+    margin: 0.3rem;
+    border-radius: 50%;
+    transition: 250ms;
+}
+
+.share a:hover {
+    background-color: rgb(255, 220, 156);
+}

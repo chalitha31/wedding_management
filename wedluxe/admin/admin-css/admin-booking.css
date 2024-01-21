@@ -1,0 +1,104 @@
+.selector-container {
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    gap: 20px;
+    margin-left: 50px;
+}
+
+.type-selector {
+    outline: none;
+    padding: 2px 20px;
+    border-radius: 20px;
+    border: 1px solid grey;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-top: 50px;
+    font-size: 18px;
+    max-width: 95%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+td {
+    vertical-align: top;
+}
+
+th,
+td {
+    font-weight: 400;
+    border: 1px solid grey;
+    padding: 5px 10px;
+}
+
+tr {
+    background-color: rgb(255, 255, 255);
+}
+
+tr:nth-child(2n-1) {
+    background-color: rgba(212, 202, 202, 0.63);
+}
+
+tr:nth-child(2) td {
+    padding-top: 15px;
+}
+
+tr:last-child td {
+    padding-bottom: 15px;
+}
+
+th {
+    font-weight: 500;
+    background-color: rgb(70, 70, 70);
+    color: white;
+}
+
+td:nth-child(5) {
+    text-align: center;
+}
+
+.view-btn,
+.block-btn {
+    padding: 5px 15px;
+    border-radius: 15px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(255, 206, 206);
+    transition: 300ms;
+}
+
+.view-btn {
+    background-color: rgb(206, 236, 255);
+}
+
+.view-btn:hover {
+    background-color: rgb(97, 194, 255);
+}
+
+.block-btn:hover {
+    background-color: rgb(255, 106, 106);
+}
+
+@media (max-width:900px) {
+    table {
+        width: 95%;
+        font-size: 15px;
+    }
+}
+
+@media (max-width:500px) {
+    table {
+        max-width: 95%;
+        font-size: 12px;
+    }
+    th,
+    td {
+        padding: 5px 0px;
+        padding-left: 3px;
+        word-break: break-all;
+    }
+}

@@ -1,0 +1,200 @@
+.hotel-home-container {
+    position: relative;
+    margin-top: var(--margin);
+    min-height: calc(100vh - var(--margin) - var(--footer-height));
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(8deg, rgb(219, 219, 219), rgb(255, 255, 255));
+}
+
+.ab1 {
+    position: absolute;
+    z-index: 1;
+    right: 5%;
+    top: 0%;
+    width: 150px;
+    filter: opacity(0.9) saturate(0);
+}
+
+.page-title {
+    align-self: center;
+    font-size: 40px;
+    width: 100%;
+    background-image: linear-gradient(90deg, rgba(122, 122, 122, 0.281), rgba(207, 207, 207, 0.096));
+    text-align: center;
+    font-weight: 500;
+    padding: 15px 0px;
+    z-index: 2;
+    color: rgb(51, 51, 51);
+    letter-spacing: 5px;
+}
+
+.search-block {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    align-self: flex-start;
+    margin-left: 8vw;
+    margin-top: 50px;
+}
+
+.search-bar {
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 50px;
+    width: 250px;
+    border: none;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.404);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.582);
+}
+
+.search-block img {
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.582);
+    padding: 10px;
+    filter: invert(0.4);
+    transition: 250ms;
+}
+
+.search-block img:hover {
+    filter: invert(0.2);
+}
+
+.search-block img:active {
+    box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.582);
+}
+
+.hotels-container {
+    padding: 30px 0px;
+    margin: 30px 0px 100px 0px;
+    width: 92%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.226);
+    box-shadow: 0px 1px 4px rgba(255, 255, 255, 0.897);
+    min-height: 800px;
+    height: min-content;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    z-index: 2;
+}
+
+.hotel-item-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    height: 340px;
+    padding: 0px 0px 20px 0px;
+    background-color: rgba(240, 240, 240, 0.24);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgb(212, 212, 212), -5px -5px 8px rgb(255, 255, 255);
+    transition: 250ms;
+    cursor: pointer;
+}
+
+.hotel-item-block:hover {
+    box-shadow: 5px 5px 5px rgb(212, 212, 212), -5px -5px 8px rgb(255, 255, 255);
+    background-color: rgb(48, 48, 48);
+}
+
+.hotel-item-block:active {
+    background-color: rgb(70, 70, 70);
+}
+
+.hotel-item-block:hover .hotel-name {
+    color: rgb(255, 255, 255);
+}
+
+.hotel-item-block:hover .hotel-location {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.hotel-item-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 250ms;
+}
+
+.hotel-item-block:hover .hotel-item-image {
+    transform: scale(1.1);
+}
+
+.hotel-item-image-holder {
+    width: 100%;
+    height: 78%;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.418);
+}
+
+.hotel-name {
+    color: rgb(49, 49, 49);
+}
+
+.hotel-location {
+    text-align: center;
+    color: rgb(119, 119, 119);
+}
+
+i img {
+    height: 12px;
+    filter: invert(0.4);
+    margin-right: 5px;
+}
+
+
+/* pagination */
+
+.pagination {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+
+/* pagination */
